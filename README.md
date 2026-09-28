@@ -55,7 +55,7 @@ Report + Feedback
 ├── pipeline.py        # Sequential pipeline and command-line entry point
 ├── app.py             # Streamlit application
 ├── requirements.txt   # Python dependencies
-└── .gitignore
+
 ```
 
 ## Getting Started
