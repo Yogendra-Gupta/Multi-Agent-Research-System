@@ -1,14 +1,31 @@
 # Multi-Agent Research System
 
 A Streamlit-based AI research assistant that turns a natural-language
-topic into a structured Markdown report using a sequential, multi-stage
-workflow.
+topic into a structured research report. It uses a sequential,
+multi-stage workflow for web search, source extraction, report
+generation, and critique.
 
 ## Overview
 
 The system combines web search, webpage extraction, LLM-based report
 generation, and an AI critique step to help users explore a topic and
 produce an organized research summary.
+
+## Features
+
+-   **Web research:** Searches the web with Tavily and returns up to
+    five results.
+-   **Source extraction:** Selects a relevant URL and extracts page text
+    using Requests and BeautifulSoup.
+-   **AI-generated reports:** Produces a Markdown report with an
+    introduction, key findings, conclusion, and sources.
+-   **Report critique:** Generates a score, strengths, improvement
+    areas, and a brief verdict.
+-   **Interactive UI:** Displays pipeline outputs and critique in
+    Streamlit.
+-   **Markdown export:** Download the generated report for later use.
+-   **CLI pipeline:** Run the research workflow from the command line.
+
 
 ## How It Works
 
@@ -107,9 +124,9 @@ Keep `.env` out of version control. Never commit API keys.
 ``` bash
 streamlit run app.py
 ```
-
-Open the local URL shown in the terminal, enter a research topic, and
-run the pipeline.
+Enter a topic and run the research pipeline. Review the search and
+extraction outputs, generated report, and critique; then download the
+report as Markdown.
 
 To run the command-line pipeline, use:
 
@@ -151,8 +168,5 @@ redirects and response sizes, and review authentication and
 rate-limiting requirements. Store API keys in environment variables or a
 secrets manager.
 
-## License
-
-No license information was specified in the project report. Add a
 `LICENSE` file before presenting the repository as open source.
 
