@@ -159,14 +159,5 @@ platform. Current improvement areas include:
 -   Consolidate orchestration so the UI and pipeline share one
     implementation
 
-## Security Note
 
-The application fetches webpages selected during the research process.
-Before deploying it publicly, add strict URL and IP validation, block
-localhost/private/link-local and cloud-metadata addresses, limit
-redirects and response sizes, and review authentication and
-rate-limiting requirements. Store API keys in environment variables or a
-secrets manager.
-
-`LICENSE` file before presenting the repository as open source.
 
