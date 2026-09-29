@@ -80,7 +80,7 @@ Report + Feedback
 ### 1. Clone the repository
 
 ``` bash
-git clone https://github.com/AkarshVyas/Multi-agent-research-system.git
+git clone https://github.com/Yogendra-Gupta/Multi-Agent-Research-System.git
 cd Multi-agent-research-system
 ```
 
